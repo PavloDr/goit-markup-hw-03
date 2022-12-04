@@ -1,11 +1,41 @@
     body {
         font-family: "Roboto", "sans-serif";
-        display: inline-block;
     }
 
     ul {
         list-style: none;
-        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        height: 72px;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        width: 1440px;
+        justify-content: center;
+    }
+
+    
+    .container-nav
+    .container-ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .container-nav {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+
+    }
+
+    .container-ul li :first-child {
+        margin-left: 77px;
+    }
+    .container-ul li+li {
+        margin-left: 40px;
     }
 
     .link {
@@ -14,11 +44,8 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 1.33;
-            
-        display: flex;
-        align-items: center;
+        
         letter-spacing: 0.03em;
-        text-transform: uppercase;
     
         color: #4D5AE5;
     }
@@ -30,15 +57,15 @@
         font-size: 18px;
         line-height: 1.33;
 
-        display: flex;
-        align-items: center;
         letter-spacing: 0.03em;
-        text-transform: uppercase;
 
+        padding-top: 24px;
         color: #2E2F42;
     }
 
     .linkstudio {
+        padding-top: 24;
+        padding-bottom: 24;
         text-decoration: none;
 
         font-weight: 500;
@@ -50,7 +77,8 @@
         color: #2E2F42;
     }
 
-    .linkstudio:hover, .linkstudio:focus {
+    .linkstudio:hover, 
+    .linkstudio:focus {
         text-decoration: none;
 
         font-weight: 500;
@@ -73,7 +101,8 @@
         color: #2E2F42;
     }
 
-    .linkportf:hover, .linkportf:focus {
+    .linkportf:hover, 
+    .linkportf:focus {
         text-decoration: none;
 
         font-weight: 500;
@@ -96,7 +125,8 @@
         color: #2E2F42;
     }
 
-    .linkcont:hover, .linkcont:focus {
+    .linkcont:hover, 
+    .linkcont:focus {
         text-decoration: none;
 
         font-weight: 500;
@@ -120,7 +150,8 @@
         color: #434455;
     }
 
-    .linktelmail:hover, .linktelmail:focus {
+    .linktelmail:hover, 
+    .linktelmail:focus {
         text-decoration: none;
 
         font-weight: 400;
@@ -130,12 +161,31 @@
         letter-spacing: 0.02em;
         color: #4D5AE5;
     }
+    
+    main {
+        width: 1128px;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .top {
         background-color: #2E2F42;
+        height: 603px;
+        margin-bottom: 120px;
+    }
+
+    .container {
+        width: 1128px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .top h1 {
+        padding-top: 192px;
+        margin-top: 0;
+        margin-bottom: 64px;
         font-weight: 500;
         font-size: 56px;
         line-height: 1.07;
@@ -143,14 +193,15 @@
         text-align: center;
         letter-spacing: 0.02em;
 
+        align-items: center;
         color: #FFFFFF;
     }
 
     .top button {
-        cursor: pointer;
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        margin-bottom: 208px;
+        cursor: pointer;
         padding: 16px 32px;
         gap: 10px;
 
@@ -167,7 +218,11 @@
         color: #FFFFFF;
     }
 
-    .top button:hover, .top button:focus {
+    .top button:hover, 
+    .top button:focus {
+        display: flex;
+        align-items: center;
+        margin-bottom: 208px;
         background-color: #404BBF;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 4px;
@@ -176,14 +231,36 @@
         font-size: 16px;
         line-height: 1.19;
 
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
         letter-spacing: 0.04em;
 
         color: #FFFFFF;
     }
 
+    .serv {
+        width: 1128px;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        margin-bottom: 120px;
+        padding-right: 40px;
+    }
+
+    .serv li+li {
+        margin-left: 24px;
+    }
+
+    .serv li {
+        height: 104px;
+    }
+
     .services h3 {
+        margin: 0;
+        width: 264px;
+        height: 24px;
+        
         font-weight: 500;
         font-size: 20px;
         line-height: 1.20;
@@ -194,6 +271,9 @@
     }
 
     .services p {
+        margin-top: 8px;
+        width: 264px;
+        height: 72px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.50;
@@ -204,6 +284,8 @@
     }
 
     .rect h2 {
+        margin-bottom: 72px;
+        text-align: center;
         font-weight: 500;
         font-size: 36px;
         line-height: 1.11;
@@ -215,13 +297,28 @@
     }
 
     .rectangle {
+        display: flex;
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
         background-color: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
         background-blend-mode: soft-light, normal;
         border: 1px solid #E7E9FC;
+
+        margin-bottom: 120px;
     }
 
+    .rectangle li+li {
+        margin-left: 24px;
+    }
+
+    .team {
+        height: 732px;
+        background-color: #F4F4FD;
+    }
     .team h2 {
+        margin: 0;
+        text-align: center;
         font-weight: 500;
         font-size: 36px;
         line-height: 1.11;
@@ -230,37 +327,64 @@
 
         text-transform: capitalize;
         color: #2E2F42;
+        padding-top: 120px;
+        margin-bottom: 72px;
     }
 
-    .team ul {
+    .staff {
+        display: flex;
+        background-color: #FFFFFF;
     }
-
     .staff h3 {
+        margin: 0;
+        text-align: center;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.20;
         letter-spacing: 0.02em;
 
         color: #2E2F42;
+
+        margin-top: 32px;
+
     }
 
     .staff p {
+        margin: 0;
+        text-align: center;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.50;
         letter-spacing: 0.02em;
 
         color: #434455;
+        margin-top: 8px;
+    }
+
+    .staff li+li {
+        margin-left: 24px;
     }
 
     .footer {
         background-color: #2E2F42;
+        height: 310px;
+
     }
+
+    .footer .link {
+        width: 115px;
+        color: #4D5AE5;
+        padding-top: 100px;
+        padding-left: 156px;
+    }
+    
     .footer .logo {
+        width: 115px;
         color: #F4F4FD;
     }
 
     .footer p {
+        width: 264px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.50;
@@ -268,6 +392,8 @@
         letter-spacing: 0.02em;
         
         color: #E7E9FC;
+        margin-top: 138px;
+        margin-left: 156px;
     }
 
     .portfolio-links button {
