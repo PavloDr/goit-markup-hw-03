@@ -496,6 +496,7 @@ body {
 
     .img {
         height: 420px;
+        border-bottom;: 0.5px solid #F4F4FD
     }
 
     .picture > .img {
@@ -511,7 +512,7 @@ body {
         background-color: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365);
         background-blend-mode: soft-light, normal;
         mix-blend-mode: normal;
-    }
+      }
 
     .img-head {
         width: 291px;
