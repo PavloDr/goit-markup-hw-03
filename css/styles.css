@@ -36,7 +36,7 @@ body {
 
     
     .list,
-    .link,
+    .spc,
     .tm {
         display: flex;
         padding: 0;
@@ -45,16 +45,16 @@ body {
 
     .list {
         display: flex;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        /* padding-top: 24px;
+        padding-bottom: 24px; */
         align-items: center;
     }
 
-    .link > li :first-child {
+    .spc > li :first-child {
         margin-left: 77px;
     }
 
-    .link li+li {
+    .spc li+li {
         margin-left: 40px;
     }
 
@@ -81,7 +81,8 @@ body {
         letter-spacing: 0.03em;
     
         color: #4D5AE5;
-        padding: 24px, 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .logo {
@@ -93,8 +94,9 @@ body {
 
         letter-spacing: 0.03em;
 
-        padding: 24px, 0;
         color: #2E2F42;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .linkstudio {
@@ -109,6 +111,8 @@ body {
         letter-spacing: 0.02em;
 
         color: #2E2F42;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .linkstudio:hover, 
@@ -134,6 +138,8 @@ body {
         letter-spacing: 0.02em;
 
         color: #2E2F42;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .linkportf:hover, 
@@ -149,7 +155,6 @@ body {
     }
 
     .linkcont {
-        padding: 24px, 0;
         text-decoration: none;
 
         font-weight: 500;
@@ -159,6 +164,8 @@ body {
         letter-spacing: 0.02em;
 
         color: #2E2F42;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .linkcont:hover, 
@@ -175,7 +182,8 @@ body {
     }
 
     .linktelmail {
-        padding: 24px, 0;
+        margin-right: 0;
+        padding-right: 0;
         text-decoration: none;
 
         font-weight: 400;
@@ -185,6 +193,9 @@ body {
         letter-spacing: 0.02em;
 
         color: #434455;
+
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .linktelmail:hover, 
@@ -199,12 +210,9 @@ body {
         color: #4D5AE5;
     }
     
-    /* .container > h1, */
     .container > button {
         display: flex;
-        /* justify-content: center; */
-        /* flex-direction: column; */
-        /* align-items: center; */
+        
     }
     .top {
         background-color: #2E2F42;
@@ -271,24 +279,16 @@ body {
         padding-bottom: 120px;
     }
     .serv {
-        width: 1128px;
-        margin: 0;
-        padding-left: 15px;
-        padding-right: 15px;
         display: flex;
 
         padding-right: 40px;
     }
 
-    .serv li+li {
+    .serv .servli+.servli {
         margin-left: 24px;
     }
 
-    .serv li {
-        height: 104px;
-    }
-
-    .services h3 {
+    .services .servh {
         margin: 0;
         width: 264px;
         height: 24px;
@@ -302,7 +302,7 @@ body {
         color: #2E2F42;
     }
 
-    .services p {
+    .services .servp {
         margin-top: 8px;
         width: 264px;
         height: 72px;
@@ -331,17 +331,17 @@ body {
         color: #2E2F42;
     }
 
-    .rectangle {
+    .rectan {
         display: flex;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        background-color: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
+        /* background-color: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg); */
         background-blend-mode: soft-light, normal;
         border: 1px solid #E7E9FC;
     }
 
-    .rectangle li+li {
+    .rectan .rectanli+.rectanli {
         margin-left: 24px;
     }
 
@@ -369,7 +369,7 @@ body {
         display: flex;
 
     }
-    .staff > li {
+    .staff > .staffli {
         background-color: #FFFFFF;
     }
 
@@ -403,7 +403,7 @@ body {
         color: #434455;
     }
 
-    .staff li+li {
+    .staff .ctsffli+.staffli {
         margin-left: 24px;
     }
 
@@ -425,6 +425,7 @@ body {
     }
 
     .ft p {
+        margin-top: 16px;
         width: 264px;
         font-weight: 400;
         font-size: 16px;
@@ -435,15 +436,15 @@ body {
         color: #E7E9FC;
     }
 
-    .container > .portfolio-links {
+    .container > .portflink {
         display: flex;
         margin-top: 96px;
         justify-content: center;
     } 
-    .portfolio-links > li+li {
+    .portflink > .portfli+.portfli {
         margin-left: 24px;
     }
-    .portfolio-links button {
+    .portflink button {
         padding: 16px 32px;
         gap: 10px;
 
@@ -462,8 +463,8 @@ body {
         color: #FFFFFF;
     }
 
-    .portfolio-links button:hover,
-    .portfolio-links button:focus {
+    .portflink button:hover,
+    .portflink button:focus {
         cursor: pointer;
         background-color: #404BBF;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -479,9 +480,11 @@ body {
 
         color: #FFFFFF;
     }
-    .container > .picture {
+    /* .container >  */
+    .picture {
         display: flex;
-        margin-top: 72px;
+        padding-top: 72px;
+        padding-bottom: 120px;
         justify-content: center;
         flex-wrap: wrap;
         margin-left: calc(-1 * var(--picture-gap));
@@ -489,10 +492,13 @@ body {
     
     .picture > .img {
         flex-basis: calc(100% / 3 - var(--picture-gap));
-        margin-bottom: 48px;
     }
 
-    .picture > li+li {
+    .img {
+        height: 420px;
+    }
+
+    .picture > .img {
         margin-left: var(--picture-gap);
     }
     
@@ -535,19 +541,4 @@ body {
         color: #434455;
         margin-top: 8px;
         margin-left: 16px;
-    }
-
-    .picture .inside {
-        width: 296px;
-        height: 96px;
-        left: 32px;
-        top: 40px;
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.50;
-
-        letter-spacing: 0.02em;
-
-        color: #F4F4FD;
     }
