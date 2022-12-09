@@ -39,36 +39,31 @@ body {
     .spc,
     .tm {
         display: flex;
+        align-items: center;
         padding: 0;
         margin: 0;
     }
 
     .list {
         display: flex;
-        /* padding-top: 24px;
-        padding-bottom: 24px; */
-        align-items: center;
+        gap: 40px;
     }
 
-    .spc > li :first-child {
-        margin-left: 77px;
-    }
-
-    .spc li+li {
+    .spc .spcli+.spcli {
         margin-left: 40px;
     }
 
-    .tm li :first-child {
-        margin-left: 77px;
-    }
-    .tm li+li {
-        margin-left: 40px;
-        margin-right: 0 ;
-        padding-right: 0;
-    }
-
+    
     .tm {
-        margin-right: 0 auto;
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .tm .tmli+.tmli {
+        margin-left: 40px;
+        /* margin-right: 0 ;
+        padding-right: 0; */
     }
 
     .link {
@@ -97,6 +92,7 @@ body {
         color: #2E2F42;
         padding-top: 24px;
         padding-bottom: 24px;
+        margin-right: 77px;
     }
 
     .linkstudio {
@@ -182,8 +178,8 @@ body {
     }
 
     .linktelmail {
-        margin-right: 0;
-        padding-right: 0;
+        margin-right: 0 auto;
+        /* padding-right: 0; */
         text-decoration: none;
 
         font-weight: 400;
