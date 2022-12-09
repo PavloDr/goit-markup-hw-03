@@ -372,6 +372,9 @@ body {
     .staff > .staffli {
         background-color: #FFFFFF;
     }
+    .staff > .staffli+.staffli {
+        margin-left: 24px;
+    }
 
     .name {
         padding-top: 32px;
